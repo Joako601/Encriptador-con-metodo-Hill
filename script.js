@@ -8,6 +8,10 @@ const k22 = document.getElementById('k22');
 const btnEncriptar = document.getElementById('encriptar');
 const resultado = document.getElementById('resultado');
 
+const btnDesencriptar = document.getElementById('desencriptar');
+const resultadoDes = document.getElementById('resultadoDesencriptado'); 
+const mensajeEncriptado = document.getElementById('mensajeEncriptado');
+
 // Actualizar contador de caracteres
 mensaje.addEventListener('input', () => {
     const len = mensaje.value.length;
