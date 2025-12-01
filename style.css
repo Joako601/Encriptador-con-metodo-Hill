@@ -73,16 +73,17 @@ textarea {
     min-height: 80px;
     font-family: inherit;
     transition: border-color 0.3s;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 textarea:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #1dd3d6;
 }
 
 .char-count {
     text-align: right;
-    color: #666;
+    color: #1dd3d6;
     font-size: 12px;
     margin-top: 5px;
 }
@@ -96,6 +97,7 @@ textarea:focus {
     font-family: 'Courier New', monospace;
     color: #333;
     line-height: 1.8;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .matriz-input {
@@ -116,7 +118,7 @@ textarea:focus {
 
 .matriz-input input:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #1dd3d6;
 }
 
 button {
