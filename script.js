@@ -141,6 +141,21 @@ function desencriptarMensaje() {
         resultado.classList.add('error');
         return;
     }
+
+    const detInv = inversos[det];
+
+    // Calcular matriz inversa mod 26
+    const invKey = [
+        [( key[1][1] * detInv) % 26, (-key[0][1] * detInv) % 26],
+        [(-key[1][0] * detInv) % 26, ( key[0][0] * detInv) % 26]
+    ];
+
+    // Evitar valores negativos
+    for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+            if (invKey[i][j] < 0) invKey[i][j] += 26;
+        }
+    }
 }
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
