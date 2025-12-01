@@ -37,15 +37,16 @@ body {
 }
 
 h1 {
-    color: #1e3c72;
+    color: #1dd3d6;
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 h3 {
-    color: #2a5298;
+    color: #1dd3d6;
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 500;
