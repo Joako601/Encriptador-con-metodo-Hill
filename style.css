@@ -5,13 +5,14 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #408f94 0%, #1dd3d6 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    text-align: center;
 }
 
 .container {
@@ -21,6 +22,18 @@ body {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
