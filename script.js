@@ -156,6 +156,16 @@ function desencriptarMensaje() {
             if (invKey[i][j] < 0) invKey[i][j] += 26;
         }
     }
+
+    // Convertir texto a números
+    let numeros = texto.split('').map(char => char.charCodeAt(0) - 65);
+
+    // Asegurar que sea par
+    if (numeros.length % 2 !== 0) {
+        resultado.textContent = 'Error: El mensaje encriptado debe tener longitud par';
+        resultado.classList.add('error');
+        return;
+    }
 }
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
