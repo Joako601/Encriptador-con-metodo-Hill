@@ -116,6 +116,19 @@ function desencriptarMensaje() {
         resultado.classList.add('error');
         return;
     }
+
+    // Obtener texto encriptado
+    const texto = mensajeEncriptado.value.toUpperCase().replace(/[^A-Z]/g, '');
+
+    if (texto.length === 0) {
+        resultadoDes.textContent = 'Error: Ingresa un mensaje encriptado';
+        resultado.classList.add('error');
+        return;
+    }
+
+    // Calcular determinante
+    let det = (key[0][0] * key[1][1] - key[0][1] * key[1][0]) % 26;
+    if (det < 0) det += 26;
 }
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
