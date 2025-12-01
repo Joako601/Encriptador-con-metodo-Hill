@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Courier New, Courier, monospace;
     background: linear-gradient(135deg, #408f94 0%, #1dd3d6 100%);
     min-height: 100vh;
     display: flex;
@@ -95,7 +95,7 @@ textarea:focus {
     border-radius: 4px;
     border: 2px solid #e0e0e0;
     min-height: 60px;
-    font-family: 'Courier New', monospace;
+    font-family: Courier New, Courier, monospace;
     color: #333;
     line-height: 1.8;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -153,7 +153,7 @@ button:active {
     border-radius: 4px;
     border: 2px solid #1dd3d6;
     min-height: 60px;
-    font-family: 'Courier New', monospace;
+    font-family: Courier New, Courier, monospace;
     color: #333;
     word-wrap: break-word;
     box-shadow: 0 10px 40px #1dd3d6;
