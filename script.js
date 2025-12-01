@@ -166,6 +166,23 @@ function desencriptarMensaje() {
         resultado.classList.add('error');
         return;
     }
+
+    // Desencriptar
+    let desencriptado = '';
+    for (let i = 0; i < numeros.length; i += 2) {
+        const c1 = numeros[i];
+        const c2 = numeros[i + 1];
+
+        const p1 = (invKey[0][0] * c1 + invKey[0][1] * c2) % 26;
+        const p2 = (invKey[1][0] * c1 + invKey[1][1] * c2) % 26;
+
+        desencriptado += String.fromCharCode(65 + p1);
+        desencriptado += String.fromCharCode(65 + p2);
+    }
+
+    resultado.classList.remove('error');
+    resultadoDes.textContent = desencriptado;
+    resultadoDes.classList.remove('error');
 }
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
