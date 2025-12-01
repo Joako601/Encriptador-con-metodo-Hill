@@ -129,6 +129,18 @@ function desencriptarMensaje() {
     // Calcular determinante
     let det = (key[0][0] * key[1][1] - key[0][1] * key[1][0]) % 26;
     if (det < 0) det += 26;
+
+    // Ver si tiene inverso multiplicativo mod 26
+    const inversos = {
+        1:1, 3:9, 5:21, 7:15, 9:3, 11:19, 15:7,
+        17:23, 19:11, 21:5, 23:17, 25:25
+    };
+
+    if (!inversos[det]) {
+        resultado.textContent = 'Error: La matriz no es invertible módulo 26';
+        resultado.classList.add('error');
+        return;
+    }
 }
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
