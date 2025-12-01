@@ -102,3 +102,9 @@ btnEncriptar.addEventListener('click', () => {
     resultado.classList.remove('error');
     resultado.textContent = encriptado;
 });
+
+function desencriptarMensaje() {
+
+}
+
+btnDesencriptar.addEventListener('click', desencriptarMensaje);
