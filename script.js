@@ -103,6 +103,19 @@ btnEncriptar.addEventListener('click', () => {
     resultado.textContent = encriptado;
 });
 
-function desencriptarMensaje() {}
+function desencriptarMensaje() {
+    // Obtener matriz clave
+    const key = [
+        [parseInt(k11.value) || 0, parseInt(k12.value) || 0],
+        [parseInt(k21.value) || 0, parseInt(k22.value) || 0]
+    ];
+
+    // Validar clave no vacía
+    if (key[0][0] === 0 && key[0][1] === 0 && key[1][0] === 0 && key[1][1] === 0) {
+        resultado.textContent = 'Error: Ingresa una matriz clave válida';
+        resultado.classList.add('error');
+        return;
+    }
+}
 
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
