@@ -167,6 +167,43 @@ git log --oneline --graph --decorate
 
 ---
 
+## 📧 Contacto
+
+- *Email Institucional:* joaquin.uriona@tecdesoftware.edu.mx
+- *GitHub:* Joako601(https://github.com/Joako601)
+
+---
+
+## 🤝 Agradecimientos
+
+- *Profesor Jorge Javier Pedrozo Romero* por la estructura del curso y la práctica
+- *Tecnológico de Software* por la formación integral
+
+---
+
+<div align="center">
+
+## 📄 Licencia
+
+Este proyecto es parte de las actividades académicas del *Tecnológico de Software* y está bajo la licencia MIT.
+
+<div align="center">
+
+---
+
+<div align="center">
+  
+## ✨ Autor
+
+<div align="center">
+
+*⭐ Si te gustó este portafolio, dale una estrella ⭐*
+
+Hecho con 💙 por Joaquin Uriona - 2025
+
+</div>
+
+
 
 
 
