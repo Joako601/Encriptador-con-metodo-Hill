@@ -120,5 +120,37 @@ Se realiza la operación inversa con la siguiente formula:
 
 ---
 
+## Personalización Realizada en la pagina:
+
+### 1. Diseño Visual 
++ Se utilizó un fondo con gradiente diagonal en tonos turquesa (`#408f94 → #1dd3d6`).
++ La interfaz principal está contenida en una tarjeta central blanca, con bordes redondeados y sombras.
++ Todos los elementos están centrados responsivamente para mantener una presentación equilibrada en computadoras y celulares.
+
+### 2. Animaciones y Transiciones
++ La caja principal se muestra con una animación personalizada `fadeSlideIn`, logrando un efecto suave de aparición.
++ Inputs, botones y áreas de texto incluyen transiciones de color al interactuar.
+
+### 3. Estilo de Formularios y Matriz
++ Las entradas numéricas de la matriz clave están organizadas en un grid de 2×2, lo que facilita la comprensión del cifrado Hill.
++ Los `textarea` y cuadros de resultado tienen sombra, bordes redondeados.
++ Se agregó un contador de caracteres con estilo en color turquesa.
+
+### 4. Botones Interactivos
++ Los botones cuentan con:
+  + Un color principal turquesa.
+  + Hover con transición.
+  + Pequeña animación de presión (`scale`) al hacer clic.
+
+### 5. Manejo de Errores
++ Los mensajes de error se muestran en rectangulos de tonos rojos suaves (`#ffebee`).
+
+### 6. Personalización del Footer
++ El pie de página utiliza el color temático (`#1dd3d6`), con texto blanco, sombras y bordes redondeados.
+
+---
+
+
+
 
 
