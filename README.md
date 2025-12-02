@@ -78,3 +78,47 @@ $$ Matriz =
 $$
 
 + PD: usados por el programador para hacer pruebas y se olvidaba sus matrices 2x2.
+
+---
+
+## Matematicas usadas:
+
+1. Cada letra se convierte en un número del `0 al 25`:
+2. Esta conversion se hace con:
++ El mensaje se divide en pares (vectores de 2 elementos)(Si la longitud es impar, se agrega una `X` como relleno).
+3. Cuando el usuario ingresa una matriz (`2x2`):
+
+$$ Matriz =
+\begin{pmatrix}
+a & b \\
+c & d \\
+\end{pmatrix}
+$$
+
++ La matriz debe ser invertible módulo 26, de lo contrario NO se puede desencriptar.
+
+4. Determinante de la matriz se calcula: `det = (ad - bc) mod 26`
++ El determinante debe tener un inverso multiplicativo por mod 26
+
+5. La matriz inversa se calcula como:`K⁻¹ = (1/det) * | d -b || -c a | mod 26`
++ Se ajustan valores negativos sumando 26.
+
+## Encriptación
+Cada par del mensaje se transforma con la formula:
+`C = K * P mod 26`
+
++ `P` = par del mensaje original  
++ `K` = matriz clave  
++ `C` = par encriptado
+
+## Desencriptación
+Se realiza la operación inversa con la siguiente formula:
+
+`P = K⁻¹ * C mod 26`
+
++ usando la matriz inversa calculada previamente.
+
+---
+
+
+
