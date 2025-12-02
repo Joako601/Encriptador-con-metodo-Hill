@@ -150,6 +150,23 @@ Se realiza la operación inversa con la siguiente formula:
 
 ---
 
+## Historial de Commits
+
+### Ver mi historial completo
+
+git log --oneline --graph --decorate
+
+*Commits destacados:*
+
+- feat: Cambios visuales y animacion en el body y container
+- feat: agregar estilo a los imputs y matrices
+- feat: agregar cambios visuales finales
+- feat: agregar funcionalidad al boton de desencripta
+- feat: declarar funcion de desencriptar
+- feat: agregar desencriptado en funcion desencriptar
+
+---
+
 
 
 
